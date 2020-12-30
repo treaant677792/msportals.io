@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="10" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2020-12-29" time="22:36:51">
+  <environment clr-version="Unknown" cwd="C:\Users\administrator2\Documents\msportals.xyz\_data\portals" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition4" user="administrator2" user-domain="DESKTOP-JG25CC8" nunit-version="2.5.8.0" machine-name="DESKTOP-JG25CC8" os-version="10.0.19042" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="TestFixture" name="Pester" executed="True" result="Failure" success="False" time="0.3181" asserts="0" description="Pester">
+    <results>
+      <test-suite type="TestFixture" name="C:\Users\administrator2\Documents\msportals.xyz\_data\portals\Portals.json.Tests.ps1" executed="True" result="Failure" success="False" time="0.3181" asserts="0" description="C:\Users\administrator2\Documents\msportals.xyz\_data\portals\Portals.json.Tests.ps1">
+        <results>
+          <test-suite type="TestFixture" name="Check Portal Files" executed="True" result="Failure" success="False" time="0.2761" asserts="0" description="Check Portal Files">
+            <results>
+              <test-suite type="TestFixture" name="Check Portal Files.Check PortalFileName" executed="True" result="Success" success="True" time="0.052" asserts="0" description="Check Portal Files.Check PortalFileName">
+                <results>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should be able to convert as valid JSON" executed="True" result="Success" success="True" time="0.0039" asserts="0" description="&lt;PortalFileName&gt; should be able to convert as valid JSON">
+                    <results>
+                      <test-case description="admin.json should be able to convert as valid JSON" name="Check Portal Files.Check PortalFileName.admin.json should be able to convert as valid JSON" time="0.0039" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should contain 1 or more Portal Groups" executed="True" result="Success" success="True" time="0.0035" asserts="0" description="&lt;PortalFileName&gt; should contain 1 or more Portal Groups">
+                    <results>
+                      <test-case description="admin.json should contain 1 or more Portal Groups" name="Check Portal Files.Check PortalFileName.admin.json should contain 1 or more Portal Groups" time="0.0035" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Check Portal Files.Check PortalFileName" executed="True" result="Success" success="True" time="0.0926" asserts="0" description="Check Portal Files.Check PortalFileName">
+                <results>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should be able to convert as valid JSON" executed="True" result="Success" success="True" time="0.003" asserts="0" description="&lt;PortalFileName&gt; should be able to convert as valid JSON">
+                    <results>
+                      <test-case description="thirdparty.json should be able to convert as valid JSON" name="Check Portal Files.Check PortalFileName.thirdparty.json should be able to convert as valid JSON" time="0.003" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should contain 1 or more Portal Groups" executed="True" result="Success" success="True" time="0.003" asserts="0" description="&lt;PortalFileName&gt; should contain 1 or more Portal Groups">
+                    <results>
+                      <test-case description="thirdparty.json should contain 1 or more Portal Groups" name="Check Portal Files.Check PortalFileName.thirdparty.json should contain 1 or more Portal Groups" time="0.003" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Check Portal Files.Check PortalFileName" executed="True" result="Failure" success="False" time="0.14" asserts="0" description="Check Portal Files.Check PortalFileName">
+                <results>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should be able to convert as valid JSON" executed="True" result="Success" success="True" time="0.0029" asserts="0" description="&lt;PortalFileName&gt; should be able to convert as valid JSON">
+                    <results>
+                      <test-case description="us-govt-manuallyBrokenCopy.json should be able to convert as valid JSON" name="Check Portal Files.Check PortalFileName.us-govt-manuallyBrokenCopy.json should be able to convert as valid JSON" time="0.0029" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should contain 1 or more Portal Groups" executed="True" result="Failure" success="False" time="0.0084" asserts="0" description="&lt;PortalFileName&gt; should contain 1 or more Portal Groups">
+                    <results>
+                      <test-case description="us-govt-manuallyBrokenCopy.json should contain 1 or more Portal Groups" name="Check Portal Files.Check PortalFileName.us-govt-manuallyBrokenCopy.json should contain 1 or more Portal Groups" time="0.0084" asserts="0" success="False" result="Failure" executed="True">
+                        <failure>
+                          <message>Expected the actual value to be greater than or equal to 1, but got 0.
+at $PortalGroups.groupName.Count  | Should -BeGreaterOrEqual 1, C:\Users\administrator2\Documents\msportals.xyz\_data\portals\Portals.json.Tests.ps1:30</message>
+                          <stack-trace>at &lt;ScriptBlock&gt;, C:\Users\administrator2\Documents\msportals.xyz\_data\portals\Portals.json.Tests.ps1:30</stack-trace>
+                        </failure>
+                      </test-case>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Check Portal Files.Check PortalFileName" executed="True" result="Success" success="True" time="0.1885" asserts="0" description="Check Portal Files.Check PortalFileName">
+                <results>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should be able to convert as valid JSON" executed="True" result="Success" success="True" time="0.0066" asserts="0" description="&lt;PortalFileName&gt; should be able to convert as valid JSON">
+                    <results>
+                      <test-case description="us-govt.json should be able to convert as valid JSON" name="Check Portal Files.Check PortalFileName.us-govt.json should be able to convert as valid JSON" time="0.0066" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should contain 1 or more Portal Groups" executed="True" result="Success" success="True" time="0.0033" asserts="0" description="&lt;PortalFileName&gt; should contain 1 or more Portal Groups">
+                    <results>
+                      <test-case description="us-govt.json should contain 1 or more Portal Groups" name="Check Portal Files.Check PortalFileName.us-govt.json should contain 1 or more Portal Groups" time="0.0033" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="Check Portal Files.Check PortalFileName" executed="True" result="Success" success="True" time="0.2318" asserts="0" description="Check Portal Files.Check PortalFileName">
+                <results>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should be able to convert as valid JSON" executed="True" result="Success" success="True" time="0.0032" asserts="0" description="&lt;PortalFileName&gt; should be able to convert as valid JSON">
+                    <results>
+                      <test-case description="user.json should be able to convert as valid JSON" name="Check Portal Files.Check PortalFileName.user.json should be able to convert as valid JSON" time="0.0032" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                  <test-suite type="ParameterizedTest" name="Check Portal Files.Check PortalFileName.&lt;PortalFileName&gt; should contain 1 or more Portal Groups" executed="True" result="Success" success="True" time="0.0054" asserts="0" description="&lt;PortalFileName&gt; should contain 1 or more Portal Groups">
+                    <results>
+                      <test-case description="user.json should contain 1 or more Portal Groups" name="Check Portal Files.Check PortalFileName.user.json should contain 1 or more Portal Groups" time="0.0054" asserts="0" success="True" result="Success" executed="True" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
