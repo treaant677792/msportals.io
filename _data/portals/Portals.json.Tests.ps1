@@ -11,11 +11,11 @@ Describe 'Check Portal Files' {
         }
     }
 
-    Context "Check PortalFileName" {
-        # $currentFile = @{
-        #     PortalFileName = $_.PortalFileName
-        #     FileObj        = $_
-        # }
+    Context "Check <PortalFileName>" {
+        $currentFile = @{
+            PortalFileName = $_.PortalFileName
+            FileObj        = $_
+        }
 
         It '<PortalFileName> should be able to convert as valid JSON' -TestCases @($_) {
             param ($PortalFileName, $FileObj)
