@@ -21,7 +21,7 @@ jobs:
           INPUT_JSONS:  /_data/portals/admin.json,/_data/portals/thirdparty.json,/_data/portals/us-govt.json,/_data/portals/user.json
       - name: Notify on Failure
         if: ${{ failure() }}
-        uses: distributhor/workflow-webhook@2.0.2
+        uses: distributhor/workflow-webhook@v2
         with:
           url: "https://discord.com/api/webhooks/907158414147321926/${{ env.DiscordPsychoPingKey }}"
           json: '{ "content": "<@264652399824601088>           \n\"repository\": \"${{github.event.repository.full_name}}\", \n\"number\": \"${{github.event.number}}\", \n\"created_at\": \"${{github.event.pull_request.created_at}}\", \n\"updated_at\": \"${{github.event.pull_request.updated_at}}\" \n,  \"embeds\": null"}'
